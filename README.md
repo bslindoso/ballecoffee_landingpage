@@ -8,3 +8,6 @@ Bem-vindo ao repositório do BalleCoffee, uma landing page especialmente projeta
 ## Tecnologias Utilizadas
 - HTML5
 - CSS3
+---
+![image](https://github.com/bslindoso/ballecoffee_landingpage/assets/48108317/a76db07b-927c-4cf3-9acd-0cab4a33f8b5)
+
