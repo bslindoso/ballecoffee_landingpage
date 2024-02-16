@@ -87,6 +87,7 @@ nav {
 .menu>li:hover:not(.active) {
   color: var(--colot-pale-silver);
 }
+
 /* end my code */
 
 .active {
@@ -114,7 +115,7 @@ main {
   /* height: 60vh; */
 
   /* start my code */
-  height: 42vh;
+  height: 50vh;
   /* end my code */
 
   display: flex;
@@ -171,7 +172,7 @@ hr {
   margin: -1rem;
 
   /* start my code */
-  min-width: 25rem;
+  min-width: 30rem;
   /* end my code */
 }
 
@@ -315,6 +316,7 @@ hr {
 .recipe-card-load-more:hover {
   cursor: pointer;
 }
+
 /* end my code */
 
 footer {
@@ -345,12 +347,20 @@ footer {
   text-decoration-line: underline;
 }
 
+@media(max-width: 550px) {
+
+}
+
 @media(max-width: 750px) {
-  
+
   .recipe-card-container {
     flex-direction: column;
-    /* flex-wrap: nowrap; */
   }
 
+}
 
+@media(max-width: 1000px) {
+  .hero {
+    height: 60vh;
+  }
 }
