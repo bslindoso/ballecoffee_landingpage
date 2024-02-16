@@ -32,6 +32,9 @@ ul {
   --color-redwood-alpha: #a45a499d;
   --colot-pale-silver: #C7BAB3;
   --color-eerie-black: #241A1C;
+  --color-eerie-black-dark: #23181A;
+  --color-gamboge: #E7A80E;
+  --color-dark-silver: #756A67;
 }
 
 /* STYLES */
@@ -126,6 +129,10 @@ main {
   color: var(--color-redwood)
 }
 
+.gamboge {
+  color: var(--color-gamboge);
+}
+
 .hero-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -199,13 +206,13 @@ hr {
   font-weight: 400;
 }
 
-.recipe-card-container {
+/* .recipe-card-container {
   padding: 0 10rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-}
+} */
 
 .recipe-card {
   background-color: var(--color-eerie-black);
@@ -216,6 +223,7 @@ hr {
   flex-direction: column;
   gap: 2rem;
   flex-basis: 29rem;  
+  margin-top: 2rem;
 }
 
 .recipe-card-header {
@@ -223,4 +231,79 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+}
+
+.recipe-card-header-details {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.recipe-card-title {
+  color: var(--color-old-lace);
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.recipe-card-rating {
+  color: var(--color-dark-silver);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.recipe-card-description {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  color: var(--colot-pale-silver);
+  font-weight: 400;
+}
+
+.recipe-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+}
+
+.recipe-author > img {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+.recipe-author > span {
+  color: var(--colot-pale-silver);
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+footer {
+  font-family: Inter;
+
+  padding: 4rem;
+  background-color: var(--color-eerie-black-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.footer-copy {
+  color: var(--color-old-lace);
+  font-weight: 500;
+
+}
+
+.footer-author {
+  color: rgba(255, 242, 231, 0.50);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.footer-author > span {
+  text-decoration-line: underline;
 }
