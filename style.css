@@ -231,9 +231,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-
 }
-
 
 .recipe-card {
   background-color: var(--color-eerie-black);
@@ -345,4 +343,14 @@ footer {
 
 .footer-author>span {
   text-decoration-line: underline;
+}
+
+@media(max-width: 750px) {
+  
+  .recipe-card-container {
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+  }
+
+
 }
