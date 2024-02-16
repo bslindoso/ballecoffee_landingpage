@@ -1,0 +1,226 @@
+/* IMPORT FONTS E RESET CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+/* COLOR VARIABLES */
+
+:root {
+  --color-black-chocolate: #1F1517;
+  --color-white: #FFFFFF;
+  --color-old-lace: #FFF2E7;
+  --color-old-lace-80: #FFF2E780;
+  --color-licorice: #181012;
+  --color-redwood: #A45A49;
+  --color-redwood-alpha: #a45a499d;
+  --colot-pale-silver: #C7BAB3;
+  --color-eerie-black: #241A1C;
+}
+
+/* STYLES */
+
+body {
+  background: var(--color-black-chocolate);
+  color: var(--color-white);
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+nav {
+  max-width: 1120px;
+  margin: auto;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Teko", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  color: var(--color-old-lace-80);
+}
+
+.active {
+  color: var(--color-old-lace);
+}
+
+.github {
+  color: var(--color-old-lace);
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  background: var(--color-licorice);
+}
+
+.hero {
+  max-width: 1120px;
+  padding: 0 2rem;
+  margin: auto;
+  /* height: 60vh; */
+  
+  /* start my code */
+  height: 42vh;
+  /* end my code */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+
+  overflow: clip;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.destaque {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.redwood {
+  color: var(--color-redwood)
+}
+
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+hr {
+  border-color: var(--color-redwood);
+  width: 50%;
+}
+
+.hero-subtitle {
+  color: var(--colot-pale-silver);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.hero-images-container {
+  /* max-width: 45%; */
+  column-count: 4;
+  column-gap: 1rem;
+  margin: -1rem;
+
+  /* start my code */
+  min-width: 25rem;
+  /* end my code */
+}
+
+.hero-images-container>figure>img {
+  width: 100%;
+}
+
+.button-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto;
+  transform: translate(0, -50%);
+}
+
+.button-container button {
+  border: none;
+  padding: 1rem;
+  background-color: var(--color-redwood);
+  border-radius: .5rem;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1120px;
+  padding: 3rem 2rem;
+  margin: auto;
+}
+
+.recipe-header {
+  display: flex;
+  flex-direction: column;  
+  gap: 0.5rem;
+}
+
+.recipe-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.recipe-subtitle {
+  color: var(--colot-pale-silver);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.recipe-card-container {
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.recipe-card {
+  background-color: var(--color-eerie-black);
+  padding: 2rem;
+  border-radius: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 29rem;  
+}
+
+.recipe-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}

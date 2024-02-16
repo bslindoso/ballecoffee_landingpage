@@ -2,67 +2,101 @@
 <html lang="pt-br">
 
 <head>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet"> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BalleCoffee</title>
   <meta name="description" content="Explore dezenas de variações da bebida favorita 
     entre os devs ao redor mundo!">
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
 
 </head>
 
 <body>
   <header>
     <nav>
-      <span>ballecoffee</span>
-      <ul>
-        <li>Home</li>
+      <span class="logo">ballecoffee</span>
+      <ul class="menu">
+        <li class="active">Home</li>
         <li>Receitas</li>
         <li>Novidades</li>
         <li>Melhor avaliadas</li>
       </ul>
-      <a href="http://github.com" target="_blank">Github</a>
+      <a href="http://github.com" target="_blank" class="github">Github</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <header>
-        <span>novidade</span>
-        <h1>Encontre a receita perfeita!</h1>
-        <hr>
-        <h2>Explore dezenas de variações da bebida favorita entre os devs ao redor mundo!</h2>
-      </header>
-      <div>
-        <figure><img src="./assets/hero-banner-01.jpg" alt="Imagem 01"></figure>
-        <figure><img src="./assets/hero-banner-02.jpg" alt="Imagem 02"></figure>
-        <figure><img src="./assets/hero-banner-03.jpg" alt="Imagem 03"></figure>
-        <figure><img src="./assets/hero-banner-04.jpg" alt="Imagem 04"></figure>
-        <figure><img src="./assets/hero-banner-05.jpg" alt="Imagem 05"></figure>
-        <figure><img src="./assets/hero-banner-06.jpg" alt="Imagem 06"></figure>
-        <figure><img src="./assets/hero-banner-07.jpg" alt="Imagem 07"></figure>
-        <figure><img src="./assets/hero-banner-08.jpg" alt="Imagem 08"></figure>
-        <figure><img src="./assets/hero-banner-09.jpg" alt="Imagem 09"></figure>
-        <figure><img src="./assets/hero-banner-10.jpg" alt="Imagem 10"></figure>
-        <figure><img src="./assets/hero-banner-11.jpg" alt="Imagem 11"></figure>
-        <figure><img src="./assets/hero-banner-12.jpg" alt="Imagem 12"></figure>
-      </div>
-    </section>
+    <div class="hero-container">
+      <section class="hero">
+        <header class="hero-content">
+          <span class="destaque redwood">novidade</span>
+          <h1 class="hero-title">Encontre a receita perfeita!</h1>
+          <hr>
+          <h2 class="hero-subtitle">Explore dezenas de variações da bebida favorita entre os devs ao redor mundo!</h2>
+        </header>
+        <div class="hero-images-container">
+          <figure><img src="./assets/hero-banner-01.jpg" alt="Imagem 01"></figure>
+          <figure><img src="./assets/hero-banner-05.jpg" alt="Imagem 05"></figure>
+          <figure><img src="./assets/hero-banner-09.jpg" alt="Imagem 09"></figure>
+          <figure><img src="./assets/hero-banner-02.jpg" alt="Imagem 02"></figure>
+          <figure><img src="./assets/hero-banner-06.jpg" alt="Imagem 06"></figure>
+          <figure><img src="./assets/hero-banner-10.jpg" alt="Imagem 10"></figure>
+          <figure><img src="./assets/hero-banner-03.jpg" alt="Imagem 03"></figure>
+          <figure><img src="./assets/hero-banner-07.jpg" alt="Imagem 07"></figure>
+          <figure><img src="./assets/hero-banner-11.jpg" alt="Imagem 11"></figure>
+          <figure><img src="./assets/hero-banner-04.jpg" alt="Imagem 04"></figure>
+          <figure><img src="./assets/hero-banner-08.jpg" alt="Imagem 08"></figure>
+          <figure><img src="./assets/hero-banner-12.jpg" alt="Imagem 12"></figure>
+        </div>
+      </section>
+    </div>
 
-    <section>
-      <button> 
+    <section class="button-container">
+      <button type="button">
         <img src="./assets/button.svg" alt="Botão de seta para baixo">
       </button>
     </section>
 
-    <section>
-      <header></header>
+    <section class="recipe-container">
+      <header class="recipe-header">
+        <span class="destaque redwood">receitas</span>
+        <h2 class="recipe-title">Confira as últimas receitas</h2>
+        <p class="recipe-subtitle">Dê uma olhada nas receitas mais amadas!</p>
+      </header>
+
+      <div class="recipe-card-container">
+        <div class="recipe-card">
+          <header class="recipe-card-header">
+            <div>
+              <span>em alta 🔥</span>
+              <h3>Cappuccino ☕</h3>
+            </div>
+            <p>Extraordinário · 4/4</p>
+          </header>
+          <p>Uma bebida ideal para os amantes de doce e cremosidade. 😍</p>
+          <div>
+            <img src="http://github.com/rafaballerini.png" alt="">
+            <span>Rafaella Ballerini</span>
+          </div>
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+      </div>
     </section>
   </main>
 
   <footer>
-
+    <p>Copyright &lt;CODEFEE /&gt; 2023</p>
+    <p>Feito com muito ❤ e café por Rafaella Ballerini</p>
   </footer>
 </body>
 
