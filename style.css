@@ -348,10 +348,29 @@ footer {
 }
 
 @media(max-width: 550px) {
+ 
+  .hero-images-container {
+    min-width: 26rem;
+  }
 
 }
 
 @media(max-width: 750px) {
+
+  :root {
+    font-size: 14px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    padding: .8rem;
+    gap: .8rem;
+    justify-content: center;
+  }
+
+  .hero-images-container {
+    min-width: 28rem;
+  }
 
   .recipe-card-container {
     flex-direction: column;
@@ -359,8 +378,8 @@ footer {
 
 }
 
-@media(max-width: 1000px) {
+/* @media(max-width: 1000px) {
   .hero {
-    height: 60vh;
+    height: 55vh;
   }
-}
+} */
